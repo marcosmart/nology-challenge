@@ -1,4 +1,6 @@
-### Hi there 👋
+### Hi there guys! 👋
+
+This is my nology-challange repository. Enjoy!
 
 <!--
 **marcosmart/marcosmart** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
