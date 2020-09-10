@@ -1,3 +1,14 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-color);
+  background-image: var(--bg-img);
+  transition: .5s;
+  box-sizing: border-box;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -25,16 +36,12 @@ html{
 }
 
 
-body{
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--bg-color);
-  background-image: var(--bg-img);
-  transition: .5s;
-}
+/* =============================================================================================================
 
-/* ===== Slider Button ===== */
+                                          Slider Button
+
+================================================================================================================ */
+
 
 .theme-switch {
   display: inline-block;
@@ -94,8 +101,12 @@ input:checked + .slider:before {
   z-index: 1;
 }
 
+/* =============================================================================================================
 
-/* ===== Header Area ===== */
+                                          Header Area
+
+================================================================================================================ */
+
 
 header{
   z-index: 1;
@@ -127,7 +138,12 @@ header{
 }
 
 
-/* ===== Side Navbar ===== */
+/* =============================================================================================================
+
+                                          Side Navbar
+
+================================================================================================================ */
+
 
 .sidebar{
   z-index: 1;
@@ -159,14 +175,14 @@ header{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.profile_info{
+.profile-info{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.sidebar .profile_info .profile_image{
+.sidebar .profile-info .profile-image{
   width: 10rem;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -175,7 +191,7 @@ header{
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.sidebar .profile_info .profile_image:hover{
+.sidebar .profile-info .profile-image:hover{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
@@ -217,7 +233,12 @@ label #sidebar_btn{
   width: 100%;
 }
 
-/* ===== Content ===== */
+/* =============================================================================================================
+
+                                          Content
+
+================================================================================================================ */
+
 
 .content{
   width: calc(100% - 250px);
@@ -229,7 +250,13 @@ label #sidebar_btn{
   transition: 0.3s;
 }
 
-/* ===== Home Section ===== */
+
+/* =============================================================================================================
+
+                                          Home Section
+
+================================================================================================================ */
+
 
 #home .home-page{
   font-size: 3.5rem;
@@ -262,7 +289,12 @@ label #sidebar_btn{
   text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-/* ===== About Me Section ===== */
+/* =============================================================================================================
+
+                                          About Me Section
+
+================================================================================================================ */
+
 
 #about .about-me{
   font-size: 1.5rem;
@@ -300,7 +332,12 @@ label #sidebar_btn{
   width: 35rem;
 }
 
-/* ===== Projects Section ===== */
+/* =============================================================================================================
+
+                                          Projects Section
+
+================================================================================================================ */
+
 
 .card{
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -309,6 +346,12 @@ label #sidebar_btn{
 
 .card:hover{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
 }
 
 .card-body{
@@ -357,7 +400,13 @@ label #sidebar_btn{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-/* ===== Contact Me Section ===== */
+
+/* =============================================================================================================
+
+                                          Contact Me Section
+
+================================================================================================================ */
+
 
 #contact h2{
   font-size: 2rem;
@@ -393,7 +442,13 @@ label #sidebar_btn{
   transition: text-shadow 0.3s;
 }
 
-/* ===== Footer Section ===== */
+
+/* =============================================================================================================
+
+                                          Footer Section
+
+================================================================================================================ */
+
 
 #footer{
   background-color: var(--primary-color);
@@ -407,7 +462,7 @@ label #sidebar_btn{
 }
 
 .footer-img{
-  font-size: 23px;
+  font-size: 1.5rem;
   color: var(--head-footer-color);
   margin: 0.5rem 3rem 1rem;
 }
@@ -417,14 +472,21 @@ label #sidebar_btn{
   transition: 0.3s;
 }
 
-/* ===== Check Hidden Section ===== */
+
+/* =============================================================================================================
+
+                                          Check Hidden Section
+
+================================================================================================================ */
+
+
 
 #check:checked ~ .content{
   margin-left: 60px;
   padding-left: 180px;
 }
 
-#check:checked ~ .sidebar .profile_info{
+#check:checked ~ .sidebar .profile-info{
   display: none;
 }
 
@@ -433,21 +495,38 @@ label #sidebar_btn{
 }
 
 
-/* ===== Mobile Nav ===== */
+/* =============================================================================================================
 
-.mobile_nav{
+                                          Mobile Nav
+
+================================================================================================================ */
+
+
+.mobile-nav{
   display: none;
 }
 
-.mobile_checkbox{
+.mobile-checkbox{
   display: none;
 }
+
+
+/* =============================================================================================================
+
+                                          Media Query Responsive CSS
+
+================================================================================================================ */
 
 /* ===== Media Query Responsive CSS ===== */
 
 @media screen and (max-width: 780px){
   
-  /* ===== Side Navbar Mobile ===== */
+  /* =============================================================================================================
+
+                                          Side Navbar Mobile
+
+================================================================================================================ */
+  
 
   .sidebar{
     display: none;
@@ -465,7 +544,12 @@ label #sidebar_btn{
     width: auto;
   }
 
-  /* ===== Home Section Mobile ===== */
+    /* =============================================================================================================
+
+                                          Home Section Mobile
+
+================================================================================================================ */
+
 
   #home .home-page{
     margin-top: 0px;
@@ -477,7 +561,12 @@ label #sidebar_btn{
     margin-left: 0;
   }
 
-  /* ===== About Me Section Mobile ===== */
+/* =============================================================================================================
+
+                                          About Me Section Mobile
+
+================================================================================================================ */
+
 
   #about .bio-info{
     width: 18rem;
@@ -492,7 +581,17 @@ label #sidebar_btn{
     height: 100vh;
   }
 
-  /* ===== Projectos Section ===== */
+
+ /* =============================================================================================================
+
+                                          Projectos Section Mobile
+
+================================================================================================================ */ 
+  .card-img-top {
+  width: 100%;
+  height: 50vw;
+  object-fit: cover;
+  }
 
   #projectos .card{
     margin: 3rem 0;
@@ -502,7 +601,12 @@ label #sidebar_btn{
     padding-top: 90px;
   }
 
-  /* ===== Contact Me Section ===== */
+/* =============================================================================================================
+
+                                          Contact Me Section Mobile
+
+================================================================================================================ */ 
+
 
   #contact .contact-info{
     width: 18rem;
@@ -516,17 +620,21 @@ label #sidebar_btn{
     padding-top: 250px;
   }
 
-  /* ===== Navbar Top Section ===== */
+/* =============================================================================================================
 
-  .mobile_nav{
+                                          Navbar Top Section Mobile
+
+================================================================================================================ */ 
+
+
+  .mobile-nav{
     display: block;
     width: calc(100% - 0%);
   }
 
-  .nav_bar{
+  .nav-bar{
     background: var(--primary-color);
     width: calc(100% - 0px);
-    /* margin-top: 0px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -536,22 +644,22 @@ label #sidebar_btn{
     bottom: 0;
   }
 
-  .nav_bar .fas{
+  .nav-bar .fas{
     color: #ececec;
   }
 
-  .nav_bar .fas:hover{
+  .nav-bar .fas:hover{
     color: var(--hover-color);
     transition: 0.3s;
   }
 
-  .nav_bar .mobile_profile_image{
+  .nav-bar .mobile-profile-image{
     width: 50px;
     height: 50px;
     border-radius: 50%;
   }
 
-  .nav_bar .nav_btn{
+  .nav-bar .nav_btn{
     color: #fff;
     font-size: 22px;
     cursor: pointer;
@@ -559,11 +667,11 @@ label #sidebar_btn{
     transition-property: color;
   }
 
-  .nav_bar .nav_btn:hover{
+  .nav-bar .nav_btn:hover{
     color: var(--font-color);
   }
 
-  .mobile_nav_items{
+  .mobile-nav_items{
     background: var(--primary-color);
     display: none;
   }
