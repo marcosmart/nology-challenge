@@ -30,6 +30,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 </head>
 
+
+
 <body>
 
   <input type="checkbox" id="check">
@@ -53,11 +55,11 @@
   <!--Header Area End-->
 
   <!--Mobile Navbar Start-->
-  <nav class="mobile_nav">
+  <nav class="mobile-nav">
 
-    <nav class="nav_bar">
-      <input type="checkbox" id="checkbox" class="mobile_checkbox">
-      <label for="checkbox"><img src="./images/meBlue.png" class="mobile_profile_image" alt=""></label>
+    <nav class="nav-bar">
+      <input type="checkbox" id="checkbox" class="mobile-checkbox">
+      <label for="checkbox"><img src="./images/meBlue.png" class="mobile-profile-image" alt=""></label>
       <a href="#home"><i class="fas fa-home"></i></a>
       <a href="#about"><i class="fas fa-address-card"></i></a>
       <a href="#projectos"><i class="fas fa-project-diagram"></i></a>
@@ -70,8 +72,8 @@
   <!--Sidebar Start-->
   <nav class="sidebar">
 
-    <div class="profile_info">
-      <img src="./images/meBlue.png" class="profile_image" alt="">
+    <div class="profile-info">
+      <img src="./images/meBlue.png" class="profile-image" alt="">
     </div>
     <div class="sidebar-items">
       <a href="#head"><i class="fas fa-home"></i><span>HOME</span></a>
@@ -89,11 +91,11 @@
     <!-- Home Section Start -->
     <section id="home">
 
-      <div class="container-fluid home-page">
+      <article class="container-fluid home-page">
         <p>HOLA!</p>
         <p>I'M <span>MARCOS MARTINEZ</span></p>
         <p class="jsd">JUNIOR SOFTWARE DEVELOPER</p>
-      </div>
+      </article>
 
     </section>
     <!-- Home Section End -->
@@ -102,15 +104,13 @@
     <section id="about">
 
       <div class="container-fluid about-me">
-        <div class="bio">
+        <article class="bio">
           <h2>Who is this guy?</h2>
           <p class="bio-info">Hola! My name is <span class="name-bio">Marcos Martinez</span>, I am a Junior
             Software Developer born in Mexico with a passion
-            for creating and bringing amazing stuff to life.
-            <br> <br>
-            I like tea and biscuits :)
-          </p>
-        </div>
+            for creating and bringing amazing stuff to life.</p>
+          <p>like tea and biscuits :)</p>
+        </article>
       </div>
 
     </section>
@@ -121,29 +121,26 @@
 
       <div class="container-fluid projects">
 
-        <div>
-          <h2>PROJECTS</h2>
-        </div>
+        <h2>PROJECTS</h2>
 
         <div class="card-deck deck1">
 
-          <div class="card">
-            <img src="./images/view01.jpg" class="card-img-top" alt="...">
+          <article class="card">
+            <img src="./images/tindoggo-logo.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Project 01</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.</p>
+              <h3 class="card-title">Tindoggo</h3>
+              <p class="card-text">A dating app for your doggo! A simple landing page for a fictional app made with HTML CSS and Bootstrap</p>
               <div class="project-buttons">
-                <a href="#" class="btn btn-primary buton1">Go Link</a>
-                <a href="#" class="btn btn-primary buton2">Go Link</a>
+                <a href="https://marcosmart.github.io/tindoggo/" class="btn btn-primary buton1" target="_blank">Website</a>
+                <a href="https://github.com/marcosmart/tindoggo" class="btn btn-primary buton2" target="_blank">Git Repo</a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="card">
+          <article class="card">
             <img src="./images/view03.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Project 02</h5>
+              <h3 class="card-title">Project 02</h3>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                 additional content. This content is a little bit longer.</p>
               <div class="project-buttons">
@@ -151,12 +148,12 @@
                 <a href="#" class="btn btn-primary buton2">Go Link</a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="card">
+          <article class="card">
             <img src="./images/view04.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Project 03</h5>
+              <h3 class="card-title">Project 03</h3>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                 additional content. This content is a little bit longer.</p>
               <div class="project-buttons">
@@ -164,16 +161,16 @@
                 <a href="#" class="btn btn-primary buton2">Go Link</a>
               </div>
             </div>
-          </div>
+          </article>
 
         </div>
 
         <div class="card-deck deck2">
 
-          <div class="card">
+          <article class="card">
             <img src="./images/view05.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Project 04</h5>
+              <h3 class="card-title">Project 04</h3>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                 additional content. This content is a little bit longer.</p>
               <div class="project-buttons">
@@ -181,12 +178,12 @@
                 <a href="#" class="btn btn-primary buton2">Go Link</a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="card">
+          <article class="card">
             <img src="./images/view01.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Project 05</h5>
+              <h3 class="card-title">Project 05</h3>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                 additional content. This content is a little bit longer.</p>
               <div class="project-buttons">
@@ -194,12 +191,12 @@
                 <a href="#" class="btn btn-primary buton2">Go Link</a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="card">
+          <article class="card">
             <img src="./images/view03.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Project 06</h5>
+              <h3 class="card-title">Project 08</h3>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                 additional content. This content is a little bit longer.</p>
               <div class="project-buttons">
@@ -207,7 +204,7 @@
                 <a href="#" class="btn btn-primary buton2">Go Link</a>
               </div>
             </div>
-          </div>
+          </article>
 
         </div>
 
@@ -219,13 +216,13 @@
     <!-- Contact Section Start -->
     <section id="contact">
 
-      <div class="container-fluid contact-me">
+      <article class="container-fluid contact-me">
         <div class="contact-info">
           <h2>If you like what you see, why not drop me an email?</h2>
           <p>Together let's bring your ideas to life</p>
           <a class="email-button" href="mailto:marcos.mtz@live.co.uk">Email me!</a>
         </div>
-      </div>
+      </article>
 
     </section>
     <!-- Contact Section End -->
